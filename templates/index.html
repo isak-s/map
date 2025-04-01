@@ -44,11 +44,9 @@
             attribution: esri_attribution
         });
 
-        var lyr_streets = L.tileLayer(mapbox_url, {
-            maxZoom: 28,
-            attribution: mapbox_attribution
-
-        });
+        var lyr_streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+            })
 
         // Create a layer group for markers
         var lg_markers = L.layerGroup([]);
