@@ -47,6 +47,7 @@
         var lyr_streets = L.tileLayer(mapbox_url, {
             maxZoom: 28,
             attribution: mapbox_attribution
+
         });
 
         // Create a layer group for markers
@@ -56,7 +57,7 @@
 
         // Initialize the map
         var map = L.map('map', {
-            center: [51.505, -0.09],
+            center: [55.7122, 13.2097],
             zoom: 13,
             layers: [lyr_streets] // Default layer
         });
